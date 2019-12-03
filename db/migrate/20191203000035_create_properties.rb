@@ -6,7 +6,7 @@ class CreateProperties < ActiveRecord::Migration[5.2]
       t.string :tenant_name
       t.string :lease_start_date
       t.string :lease_end_date
-      t.int :rent
+      t.integer :rent
 
       t.timestamps
     end
