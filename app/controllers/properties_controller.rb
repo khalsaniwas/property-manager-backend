@@ -1,9 +1,9 @@
-class PropertiesController < ApplicationController
+class PropertiesController < ProtectedController
   before_action :set_property, only: [:show, :update, :destroy]
 
   # GET /properties
   def index
-    @properties = Property.all
+    @properties = current_user.properties
 
     render json: @properties
   end
@@ -15,7 +15,7 @@ class PropertiesController < ApplicationController
 
   # POST /properties
   def create
-    @property = Property.new(property_params)
+    @property = current_user.properties.build(property_params)
 
     if @property.save
       render json: @property, status: :created, location: @property
@@ -41,7 +41,7 @@ class PropertiesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_property
-      @property = Property.find(params[:id])
+      @property = current_user.Properties.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
