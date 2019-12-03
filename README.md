@@ -1,14 +1,14 @@
 ## propert-manager (backend)
 ### Repository link: https://github.com/khalsaniwas/property-manager-backend
-### Production site link: 
-### Development site link:
+### Production site link: https://property-manager-hs.herokuapp.com/
+### Development site link: http://localhost:4741/
 
 Property Manager is a back end application programming interface. 
 
 ## property-manager (frontend)
 ### Repository link: https://github.com/khalsaniwas/property-manager
-### Production site link: 
-### Development site link: 
+### Production site link: https://khalsaniwas.github.io/property-manager/
+### Development site link: http://localhost:7165/
 
 ## Technologies used
 
@@ -39,16 +39,6 @@ Postman
 
 ## Unsolved problems
 
-## User stories
+## Api routes
 
-* [] As a new user, I should be able to SignUp.
-* [] As a signed-up user, I should be able to SignIn.
-* [] As a signed-in user, I should be able to ChangePassword.
-* [] As a signed-in user, I should be able to SignOut.
-* [] As a new user, I want to see SignUp and SignIn only.
-* [] As a signed-in user, I want to hide Signup and Signin.
-* [] As a signed-in user, I want to show ChangePassword and SignOut.
-* [] As a signed-in user, I should be able to create new property.
-* [] As a signed-in user, I should be able to view a list of my properties.
-* [] As a signed-in user, I should be able to update my properties.
-* [] As a signed-in user, I should be able to delete my properties.
+## Set up and installation instructions
