@@ -41,7 +41,7 @@ class PropertiesController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_property
-      @property = current_user.Properties.find(params[:id])
+      @property = current_user.properties.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
