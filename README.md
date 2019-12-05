@@ -1,6 +1,6 @@
 ## propert-manager (backend)
 ### Repository link: https://github.com/khalsaniwas/property-manager-backend
-### Production site link: https://property-manager-hs.herokuapp.com/
+### Production site link: https://property-manager-hs.herokuapp.com/properties
 ### Development site link: http://localhost:4741/
 
 Property Manager is a back end application programming interface. 
