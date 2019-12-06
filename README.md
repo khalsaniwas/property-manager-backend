@@ -25,21 +25,23 @@ psql
 heroku
 curl scripts
 Postman
+Heroku
 
 ## Entity relationship diagram
 ![wireframe diagram](./img/erd.png)
 
 
 ## Planning
-
+I started thinking of what resource I want to create to be able to connect it to user. I draw an entity relationship diagram for user who has email and password and second resource is Property (home or rental property). I added Name, Address, Tenant name, lease start, end date and rent for Property resource. A user has_many properties and Property belong_to user.
  
 
 ## Development story
+I user rails for my back end application Api, I started with creating Property resource with scaffold command in rails. Added relation ship for both user and property table. Connect the backend to Heroku database by deploying to Heroku. I tested backend routes by writing scripts in postman to signup, signin and the create a resource. Then connected backend application to front end. I used four Api routes for signup, signin, change password and signout. Then started working on testing routes for resource property to get property list, single property, create properties, update properties and to delete properties, Each request for property require a token to make sure only authorized signed in user which is the woner of that property is able to delete or update them. users cannot acces the data of other users.
 
 
 
 ## Unsolved problems
-
+I want to set an alert system as my stretch goal based on lease start and end date to notify the prperty owner in advance.
 
 ## Api routes
 
